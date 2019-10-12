@@ -61,6 +61,8 @@ namespace GEEKiDoS.MusicPlayer.NeteaseCloudMusicApi
         public bool Sgc { get; set; }
         public bool Sfy { get; set; }
         public bool Qfy { get; set; }
+        public bool Nolyric { get; set; }
+        public bool Uncollected { get; set; }
         public LyricUser TransUser { get; set; }
         public LyricUser LyricUser { get; set; }
         public Lrc Lrc { get; set; }
@@ -387,6 +389,14 @@ namespace GEEKiDoS.MusicPlayer.NeteaseCloudMusicApi
     {
         public List<Song> Songs { get; set; }
         public long SongCount { get; set; }
+        public List<Album> Albums { get; set; }
+        public long AlbumCount { get; set; }
+        public List<Artist> Artists { get; set; }
+        public long ArtistCount { get; set; }
+        public List<Playlist> Playlists { get; set; }
+        public long PlaylistCount { get; set; }
+        public List<User> Userprofiles { get; set; }
+        public long UserprofileCount { get; set; }
     }
 
     public class Song
